@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CKEditor Sample</title>
+	<script src="../ckeditor.js"></script>
+	<script src="js/sample.js"></script>
+	
+	<link rel="stylesheet" href="css/samples.css">
+	<link rel="stylesheet" href="toolbarconfigurator/lib/codemirror/neo.css">
+
+	 <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body id="main">
+<main>
+	<div class="adjoined-top">
+		<div class="grid-container">
+			<div class="content grid-width-100">
+				<h1>Congratulations!</h1>
+				<p>
+					If you can see CKEditor below, it means that the installation succeeded.
+					You can now try out your new editor version, see its features, and when you are ready to move on, check some of the <a href="#sample-customize">most useful resources</a> recommended below.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="adjoined-bottom">
+		<div class="grid-container">
+			<div class="grid-width-100">
+				<form id="edit" method="post">
+                    <textarea id="opinion" name="opinion" rows="10" cols="38">${item.opinion}</textarea>  
+                    <script type="text/javascript">CKEDITOR.replace('opinion')</script>    
+
+                <!--    <input type="button" value ="save" id="save" onclick="save()">                     
+                -->
+                <button type="submit" class="btn btn-default">提交</button>
+                </form>
+			</div>
+		</div>
+	</div>
+
+</main>
+
+
+</body>
+</html>
